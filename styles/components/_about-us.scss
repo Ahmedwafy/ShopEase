@@ -1,0 +1,29 @@
+.about-us {
+  margin-bottom: 100px;
+  display: flex;
+  height: 50vh;
+  .about-us-container {
+    max-width: 1200px;
+    margin: auto;
+    .paragraph-1,
+    .paragraph-2 {
+      line-height: 1.4;
+    }
+  }
+  .link {
+    background-color: aqua;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #3559e0;
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 20px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #0f2167;
+    }
+  }
+}

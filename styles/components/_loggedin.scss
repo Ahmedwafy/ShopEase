@@ -1,0 +1,259 @@
+.logged-in {
+  position: relative;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: end;
+  .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .basket-btn,
+  .orders-btn,
+  .aboutus-btn,
+  .logout-btn {
+    background-color: #3559e0;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #0f2167;
+    }
+  }
+  .basket-btn {
+    position: relative;
+    padding: 10px 20px;
+
+    .basket-count {
+      background: red;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+  }
+}
+@media (max-width: 914px) {
+  .logged-in {
+    width: 50%;
+  }
+}
+@media (max-width: 808px) {
+  .logged-in {
+    width: 60%;
+    .links-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 0;
+      .basket-btn,
+      .orders-btn,
+      .aboutus-btn,
+      .logout-btn {
+        margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: 790px) {
+  .logged-in {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .logged-in {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    margin: 20px auto;
+  }
+  .links-container {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    .basket-btn,
+    .orders-btn,
+    .aboutus-btn,
+    .logout-btn {
+      width: auto;
+      padding: 10px 48px;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .links-container {
+    display: flex;
+    gap: 2px;
+    margin: auto;
+    width: 100%;
+    .basket-btn,
+    .orders-btn,
+    .aboutus-btn,
+    .logout-btn {
+      padding: 10px;
+      width: 30%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 553px) {
+  .logged-in {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    .links-container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .basket-btn,
+  .orders-btn,
+  .aboutus-btn,
+  .logout-btn {
+    width: 60% !important;
+    text-align: center;
+  }
+}
+@media (max-width: 538px) {
+  .logged-in {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .links-container {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    .basket-btn,
+    .orders-btn,
+    .aboutus-btn,
+    .logout-btn {
+      width: 22% !important;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 488px) {
+  .logged-in {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+}
+@media (max-width: 475px) {
+  .logged-in {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .links-container {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .logged-in {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    margin: 20px auto;
+    .links-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px !important;
+      flex-wrap: wrap;
+      margin: auto;
+      width: 100%;
+      .basket-btn,
+      .orders-btn,
+      .aboutus-btn,
+      .logout-btn {
+        width: 20% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 387px) {
+  .logged-in {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto;
+    .links-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2px !important;
+      .basket-btn,
+      .orders-btn,
+      .aboutus-btn,
+      .logout-btn {
+        text-align: center !important;
+        width: auto !important;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .logged-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .links-container {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .logged-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .links-container {
+      display: flex;
+      justify-content: center;
+      text-align: center !important;
+      .basket-btn,
+      .orders-btn,
+      .aboutus-btn,
+      .logout-btn {
+        text-align: center !important;
+        width: auto !important;
+      }
+    }
+  }
+}

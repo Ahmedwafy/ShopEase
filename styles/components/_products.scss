@@ -1,0 +1,123 @@
+.products {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 30px auto;
+  border-radius: 15px;
+  .products-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1280px;
+    gap: 20px;
+    margin: 0px auto 10px auto;
+    border-radius: 15px;
+    .products-container {
+      margin: 0;
+      gap: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      height: 450px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      transition: all 0.2s ease-in-out;
+      &:focus,
+      &:hover {
+        box-shadow: 0 0 10px rgba(41, 34, 246, 0.5);
+        cursor: pointer;
+        border-radius: 15px;
+      }
+      .image {
+        z-index: 10;
+        width: 100%;
+        height: 70%;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        transition: all 0.2s ease-in-out;
+        &:focus,
+        &:hover {
+          box-shadow: 0 0 10px rgba(41, 34, 246, 0.5);
+          scale: 1.1;
+          cursor: pointer;
+          border-radius: 15px;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+      .product-info {
+        position: relative;
+        background-color: rgb(213, 213, 213);
+        border-radius: 13px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin: 0px 5px;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        height: 30%;
+        .product-title {
+          width: 80%;
+          margin-left: 10px;
+          font-size: 16px;
+        }
+        .product-price {
+          font-size: 16px;
+          margin: 0;
+          padding: 0;
+          margin-left: 10px;
+        }
+        .add-to-basket-btn {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border: none;
+          background-color: #3559e0;
+          padding: 5px;
+          border-radius: 15px;
+          border-top-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          color: white;
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 10px rgba(41, 34, 246, 0.5);
+            cursor: pointer;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            // width: 100px;
+            overflow: hidden;
+            background-color: #0f2167;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+        .more-info-btn {
+          background: none;
+          border: none;
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          font-size: 14px;
+          &::after {
+            content: "→";
+            font-size: 18px;
+            margin-left: 5px;
+          }
+          &:hover {
+            &::after {
+              content: "→";
+              font-size: 18px;
+              margin-left: 5px;
+            }
+            cursor: pointer;
+            border-radius: 8px;
+            padding: 1%;
+            box-shadow: 0 0 10px rgba(41, 34, 246, 0.5);
+            transition: all 0.1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.product {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 100px;
+  .product-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    .info {
+      margin-top: 80px;
+    }
+    .image {
+      width: 250px;
+      height: 250px;
+    }
+    .add-to-basket-btn {
+      padding: 15px;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      background-color: #3559e0;
+      color: white;
+      &:hover {
+        cursor: pointer;
+        background-color: #0f2167;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    text-align: center;
+  }
+}

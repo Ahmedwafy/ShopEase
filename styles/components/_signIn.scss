@@ -1,0 +1,105 @@
+.SignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 8% auto;
+  height: 70%;
+  .SignIn-container {
+    padding: 30px 10px;
+    margin: auto;
+    background-color: #d5d5d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    gap: 20px;
+    border-radius: 8px;
+    color: #2c3e50;
+    .signIn-title {
+      margin: auto;
+      width: 100%;
+      font-size: 22px;
+      text-align: center;
+    }
+    .signin-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 80%;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        .form-label {
+          width: 80%;
+          margin: auto;
+          color: #2c3e50;
+          font-size: 20px;
+        }
+        .form-input {
+          width: 80%;
+          margin: auto;
+          height: 40px;
+          border-radius: 5px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          outline: none;
+          padding: 5px;
+          transition: all 0.2s ease-in-out;
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 10px rgba(44, 62, 80, 0.5);
+          }
+        }
+      }
+      .sign-in {
+        width: 40%;
+        height: 50px;
+        margin: 30px auto 0;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(44, 62, 80);
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .signIn-title {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-size: 22px;
+  }
+  .sign-in {
+    width: 60% !important;
+  }
+  .SignIn-container {
+    width: 80% !important;
+  }
+  .form-label {
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .signin-form {
+    text-align: start;
+    width: 100%;
+    .form-group {
+      width: 100%;
+      .form-input {
+        width: 100%;
+      }
+      .form-label {
+        width: 100%;
+      }
+    }
+  }
+}

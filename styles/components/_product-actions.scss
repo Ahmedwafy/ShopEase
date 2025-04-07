@@ -1,0 +1,150 @@
+.product-actions {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  .order-link {
+    text-decoration: none;
+  }
+}
+/* main buttons*/
+.set-order {
+  background-color: #3559e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0f2167;
+  }
+}
+.remove {
+  background-color: #d32f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(155, 2, 2);
+  }
+}
+
+.add {
+  background-color: #388e3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #266229;
+  }
+}
+
+.clear-all {
+  background-color: #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(60, 60, 60);
+  }
+}
+
+// small screen
+.dropdown {
+  display: none;
+  position: relative;
+}
+
+.small-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  &:hover {
+    color: white;
+  }
+}
+
+.dropdown-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 120px;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+}
+.order-link-small {
+  text-decoration: none;
+}
+.dropdown-menu .set-order-small {
+  width: 100%;
+}
+.dropdown-menu .remove-small,
+.dropdown-menu .add-small,
+.dropdown-menu .clear-all-small,
+.dropdown-menu .set-order-small {
+  text-decoration: none;
+  border: none;
+  display: flex;
+  color: white;
+  text-align: start;
+  padding: 5px;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: #3559e0;
+  font-size: 18px;
+  &:hover {
+    background-color: #0f2167;
+    cursor: pointer;
+  }
+}
+
+/* media */
+@media (max-width: 560px) {
+  .buttons {
+    display: none !important;
+  }
+  .dropdown {
+    display: block !important;
+  }
+}

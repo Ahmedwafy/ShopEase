@@ -1,0 +1,64 @@
+.logged-out {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 40%;
+  .linkss-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    // background-color: #0f2167;
+  }
+  .sign-in,
+  .sign-up,
+  .about-us-btn {
+    font-size: 16px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    background-color: #3559e0;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #0f2167;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logged-out {
+    width: 80%;
+  }
+  .linkss-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .logged-out {
+    width: 80%;
+    .linkss-container {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .logged-out {
+    width: 90%;
+    .linkss-container {
+      width: 100%;
+      gap: 2px;
+      .sign-in,
+      .sign-up,
+      .about-us-btn {
+        max-width: fit-content;
+        padding: 10px;
+      }
+    }
+  }
+}

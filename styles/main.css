@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header .container .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+.header .container .logo .store-title {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .container .search-container {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header .container .search-container .search-field {
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 2px;
+}
+.header .container .search-container .search-field:focus,
+.header .container .search-container .search-field:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.header .container .search-container .search-button {
+  background-color: #007bff;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header .container .search-container .search-button:hover {
+  background-color: #0056b3;
+}
+.header .container .nav-links {
+  display: flex;
+  gap: 15px;
+}
+.header .container .nav-links .orders,
+.header .container .nav-links .basket,
+.header .container .nav-links .profile,
+.header .container .nav-links .sign-out {
+  background-color: red;
+}
+.header .container .nav-links .btn {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header .container .nav-links .btn:hover {
+  background-color: #007bff;
+}
+
+@media (min-width: 769px) and (max-width: 889px) {
+  .search-container {
+    width: 250px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .nav-links .orders,
+  .nav-links .basket,
+  .nav-links .profile,
+  .nav-links .sign-out {
+    background-color: #007bff;
+  }
+  .nav-links .btn {
+    font-size: 14px;
+    padding: 10px 10px;
+    margin: 0;
+    min-width: auto;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .container {
+    display: flex;
+    background-color: #14ca75;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+  }
+  .header .container .search-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+  .header .container .search-container .search-field {
+    width: 80%;
+    max-width: 80%;
+    padding: 10px 10px;
+    margin: auto;
+  }
+  .header .container .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0px;
+    background-color: #f35d00;
+  }
+  .header .container .nav-links .orders,
+  .header .container .nav-links .basket,
+  .header .container .nav-links .profile,
+  .header .container .nav-links .sign-out {
+    background-color: #007bff;
+  }
+  .header .container .nav-links .btn {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    text-align: center;
+  }
+}
+@media (max-width: 393px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-links .orders,
+  .nav-links .basket,
+  .nav-links .profile,
+  .nav-links .sign-out {
+    background-color: #007bff;
+  }
+  .nav-links .btn {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0px 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  .search-container .search-button {
+    padding: 0px 15px;
+  }
+  .search-container .search-field {
+    padding: 10px 15px;
+    width: 80%;
+  }
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.footer .footer-section .footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer .footer-section .footer-text {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+.footer .footer-section .footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-section .footer-links li {
+  margin-bottom: 8px;
+}
+.footer .footer-section .footer-links li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .footer-section .footer-links li a:hover {
+  color: #fff;
+}
+.footer .footer-section .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer .footer-section .social-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .footer-section .social-links a:hover {
+  color: #fff;
+}
+.footer .footer-section .social-links a i {
+  margin-right: 8px;
+}
+.footer .footer-section .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-section .newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.footer .footer-section .newsletter-form button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer .footer-section .newsletter-form button:hover {
+  background-color: #e65c00;
+}
+.footer .footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+} /*# sourceMappingURL=main.css.map */

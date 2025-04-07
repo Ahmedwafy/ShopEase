@@ -1,0 +1,115 @@
+.SignUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin: 8% auto;
+  .signUP-title {
+    margin: auto;
+    font-size: 22px;
+    text-align: center;
+  }
+  .SignUp-container {
+    padding: 50px 0;
+    margin: auto;
+    background-color: #d5d5d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+    border-radius: 8px;
+    color: #2c3e50;
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 80%;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .form-label {
+          margin: auto;
+          width: 80%;
+          color: #2c3e50;
+          font-size: 1.2rem;
+        }
+        .form-input {
+          margin: auto;
+          width: 80%;
+          height: 40px;
+          border-radius: 5px;
+          font-size: 14px;
+          border: 1px solid #ccc;
+          outline: none;
+          padding: 5px;
+          transition: all 0.2s ease-in-out;
+          &:focus,
+          &:hover {
+            box-shadow: 0 0 10px rgba(44, 62, 80, 0.5);
+          }
+        }
+        .error-message {
+          color: red;
+          text-align: start;
+          margin: auto;
+          width: 80%;
+        }
+      }
+      .form-submit {
+        width: 20%;
+        height: 50px;
+        margin: 30px auto 0;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(44, 62, 80);
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      .singin {
+        border-radius: 5px;
+        border: none;
+        color: #2c3e50;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          color: #2c3e50;
+          text-decoration: underline;
+        }
+      }
+      .form-group2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form-submit {
+    width: 40% !important;
+  }
+  .form-input {
+    width: 100% !important;
+  }
+}
+@media (max-width: 375px) {
+  .form-submit {
+    width: 50% !important;
+  }
+  .form-input {
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .SignUp {
+    width: 100% !important;
+    .SignUp-container {
+      width: 90% !important;
+    }
+  }
+}

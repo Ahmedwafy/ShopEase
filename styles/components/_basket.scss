@@ -1,0 +1,66 @@
+.basket {
+  max-width: 1200px;
+  margin: auto;
+  // height: 50vh;
+  .product-basket {
+    // li data
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #c6c6c6;
+    padding: 5px;
+    gap: 5px;
+  }
+  .btns {
+    background-color: #5c3e3e;
+    position: relative;
+    right: 0;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    .remove {
+      background-color: #d32f2f;
+      border-radius: 8px;
+      padding: 8px;
+      color: white;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(155, 2, 2);
+      }
+    }
+    .add {
+      border-radius: 8px;
+      padding: 8px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background-color: #266229;
+      }
+    }
+    .clear-all {
+      border-radius: 8px;
+      padding: 8px;
+      background-color: #757575;
+      color: white;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(60, 60, 60);
+      }
+    }
+  }
+  .total-cost {
+    text-align: center;
+    font-size: 22px;
+    background-color: #c6c6c6;
+    padding: 10px 0px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
