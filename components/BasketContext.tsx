@@ -66,13 +66,14 @@ export function BasketProvider({ children }: { children: ReactNode }) {
       return;
     }
 
+    // Check if product already exists in basket and update quantity accordingly
     setBasket((prev) => {
       const existingItem = prev.find((item) => item.id === product.id);
       return existingItem
         ? prev.map((item) =>
             item.id === product.id
               ? { ...item, quantity: item.quantity + 1 }
-              : item
+              : item,
           )
         : [...prev, { ...product, quantity: 1 }];
     });
@@ -84,25 +85,27 @@ export function BasketProvider({ children }: { children: ReactNode }) {
         .map((item) =>
           item.id === productId
             ? { ...item, quantity: removeAll ? 0 : item.quantity - 1 }
-            : item
+            : item,
         )
-        .filter((item) => item.quantity > 0)
+        .filter((item) => item.quantity > 0),
     );
   };
 
+  // Function to increment quantity of a specific product in the basket
   const addFromBasket = (productId: number) => {
     setBasket((prev) =>
       prev.map((item) =>
-        item.id === productId ? { ...item, quantity: item.quantity + 1 } : item
-      )
+        item.id === productId ? { ...item, quantity: item.quantity + 1 } : item,
+      ),
     );
   };
 
+  // Function to update quantity of a specific product in the basket
   const updateQuantity = (productId: number, newQuantity: number) => {
     setBasket((prev) =>
       prev.map((item) =>
-        item.id === productId ? { ...item, quantity: newQuantity } : item
-      )
+        item.id === productId ? { ...item, quantity: newQuantity } : item,
+      ),
     );
   };
 
@@ -112,7 +115,7 @@ export function BasketProvider({ children }: { children: ReactNode }) {
   const getTotalPrice = () => {
     return basket.reduce(
       (total, item) => total + item.price * item.quantity,
-      0
+      0,
     );
   };
 

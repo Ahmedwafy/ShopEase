@@ -45,8 +45,8 @@ const Products = () => {
         searchQuery.trim() === ""
           ? Data
           : Data.filter((product) =>
-              product.title.toLowerCase().includes(searchQuery.toLowerCase())
-            )
+              product.title.toLowerCase().includes(searchQuery.toLowerCase()),
+            ),
       );
     }
   }, [searchQuery, Data]);
@@ -90,7 +90,7 @@ const Products = () => {
                       title: product.title,
                       price: product.price.toString(),
                       description: product.description,
-                    })}`
+                    })}`,
                   )
                 }
               />

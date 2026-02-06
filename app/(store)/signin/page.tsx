@@ -11,6 +11,24 @@ const SignIn = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
 
+  // ........................... [1] Handle Input Changes ............... VIP ...........................
+  // [e.target.name]: e.target.value >>> Computed Property Name
+  // allows us to dynamically set object keys based on input field names
+  // This way we can use a single handler for multiple inputs
+  // take [e.target.name] and use it as the key ... & set its value to e.target.value
+  // Example: if input name="email", it sets credentials.email = e.target.value
+
+  // Example:
+  // const obj = { name: "Ahmed" };
+  // const key = "age";
+
+  // const newObj = { ...obj, [key]: 25 };
+
+  // {
+  //   name: "Ahmed",
+  //   age: 25
+  // }
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };

@@ -13,6 +13,7 @@ const ProductComponent = ({
   const { addToBasket, basket } = useBasket();
   const [quantity, setQuantity] = useState(0);
 
+  // Set initial quantity based on basket contents
   useEffect(() => {
     if (basket && basket.length > 0) {
       const existingItem = basket.find((item) => item.id === product.id);
@@ -22,6 +23,7 @@ const ProductComponent = ({
     }
   }, [basket, product.id]);
 
+  // Function to handle adding product to basket
   const handleAddToBasket = () => {
     addToBasket({
       id: product.id,
